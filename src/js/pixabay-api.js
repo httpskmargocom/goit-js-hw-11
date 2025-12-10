@@ -6,12 +6,12 @@ const baseUrl = "https://pixabay.com/api/";
 export async function getImagesByQuery(query) {
     const response = await axios.get(baseUrl, {
         params: {
-            key: "apiKey",
+            key: apiKey,
             q: query,
             image_type: "photo",
             orientation: "horizontal",
             safesearch: true,
         },
     });
-    return response.data;
+    return response.data.hits;
 }
