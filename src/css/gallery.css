@@ -69,3 +69,18 @@
   color: #4e75ff;
   padding: 20px 0;
 }
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  margin: 0;
+  list-style: none;
+}
+
+.info li {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
